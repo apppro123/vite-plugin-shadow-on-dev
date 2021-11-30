@@ -1,0 +1,43 @@
+{
+  "name": "vite-plugin-shadow-sync-folder-dev",
+  "version": "0.0.1",
+  "description": "vite plugin that syncs a folder with another (doesn't have to be in place yet) folder in your output dir",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "build": "tsup src/index.ts --dts --format cjs,esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+GITHUB_PAGE"
+  },
+  "author": "Noah by Pixmill",
+  "license": "MIT",
+  "bugs": {
+    "url": "GITHUB_PAGE/issues"
+  },
+  "homepage": "GITHUB_PAGE",
+  "devDependencies": {
+    "@types/node": "^14.14.20",
+    "esbuild": "^0.8.31",
+    "tsup": "^5.10.0",
+    "typescript": "^4.1.3",
+    "vite": "^2.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "chokidar": "^3.5.0"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "public",
+    "folder",
+    "refresh",
+    "copy",
+    "synchronize",
+    "sync"
+  ]
+}
