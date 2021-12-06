@@ -37,7 +37,7 @@ interface Options extends WatchOptions {
  * @param {Options} options options object for more custamization OR just the watch path as string
  * @returns vite plugin
  */
-export default function copyPublicPlugin(options: Options): Plugin {
+export default function syncFolderDevPlugin(options: Options): Plugin {
   return {
     name: "vite-plugin-copy-public",
     apply: "serve",
