@@ -6,12 +6,12 @@ import pathTools from "path";
 
 interface Options extends WatchOptions {
   /**
-   * source directory which
+   * relative path (to root) of source folder
    */
   src: string;
 
   /**
-   * Directory to sync files to (from src)
+   * relative path (to root) of destination folder
    */
   dest: string;
 
@@ -21,7 +21,7 @@ interface Options extends WatchOptions {
   log?: boolean;
 
   /**
-   * File paths will be resolved against this directory.
+   * relative path to projekt, which is root path for src and dest
    *
    * @default ViteDevServer.root
    * @internal

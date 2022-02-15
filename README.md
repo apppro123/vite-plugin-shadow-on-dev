@@ -55,7 +55,7 @@ export default defineConfig({
             <td>root</td>
             <td>string</td>
             <td>ViteDevServer.root</td>
-            <td>relative path to projekt</td>
+            <td>relative path to projekt, which is root path for src and dest</td>
         </tr>
     </tbody>
 </table>
