@@ -23,11 +23,42 @@ export default defineConfig({
 
 ## Options
 
-| | type | default | description
-| src | string | | relative path (to root) of source folder |
-| dest | string | | relative path (to root) of destination folder |
-| log | boolean | false | if page reloads should be logged |
-| root | string | ViteDevServer.root | relative path to projekt |
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>type</th>
+            <th>default</th>
+            <th>description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>src</td>
+            <td>string</td>
+            <td></td>
+            <td>relative path (to root) of source folder</td>
+        </tr>
+         <tr>
+            <td>dest</td>
+            <td>string</td>
+            <td></td>
+            <td>relative path (to root) of destination folder</td>
+        </tr>
+         <tr>
+            <td>log</td>
+            <td>boolean</td>
+            <td>false</td>
+            <td>if page reloads should be logged</td>
+        </tr>
+         <tr>
+            <td>root</td>
+            <td>string</td>
+            <td>ViteDevServer.root</td>
+            <td>relative path to projekt</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Motivation
 
