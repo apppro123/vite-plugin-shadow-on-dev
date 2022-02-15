@@ -2,6 +2,9 @@
 
 A vite plugin for shadowing folders and files (in folder) in dev mode to the specified output directory.
 
+## Install
+`npm i vite-plugin-shadow-on-dev` or `yarn add vite-plugin-shadow-on-dev`
+
 ## Example
 
 ```
