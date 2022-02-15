@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-shadow-on-dev",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vite plugin that syncs a folder with another folder in your output dir",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
