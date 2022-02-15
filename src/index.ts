@@ -6,22 +6,18 @@ import pathTools from "path";
 
 interface Options extends WatchOptions {
   /**
-   * File, directory or glob to watch for changes to run command.
-   */
-  watch: string;
-
-  /**
-   * Directory of `exec` output.
+   * source directory which
    */
   src: string;
 
   /**
-   * Directory to copy files from `dist`.
-   *
-   * @default ViteDevServer.
+   * Directory to sync files to (from src)
    */
   dest: string;
 
+  /**
+   * if page reloads should be logged
+   */
   log?: boolean;
 
   /**
@@ -72,7 +68,7 @@ export default function syncFolderDevPlugin(options: Options): Plugin {
 
         ws.send({ type: "full-reload" });
 
-        if (options.log ?? true)
+        if (options.log ?? false)
           logger.info(
             chalk.green("page reload because " + event + " at " + path),
             {
@@ -83,7 +79,7 @@ export default function syncFolderDevPlugin(options: Options): Plugin {
       };
 
       chokidar
-        .watch(options.watch, { cwd: root, ignoreInitial: true })
+        .watch(options.src, { cwd: root, ignoreInitial: true })
         .on("all", reloadAndMakeChange);
     },
   };

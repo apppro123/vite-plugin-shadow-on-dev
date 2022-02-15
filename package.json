@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-sync-folder-dev",
+  "name": "vite-plugin-shadow-on-dev",
   "version": "0.0.1",
   "description": "Vite plugin that syncs a folder with another folder in your output dir",
   "main": "dist/index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apppro123/vite-plugin-sync-folder-dev"
+    "url": "git+https://github.com/apppro123/vite-plugin-shadow-on-dev"
   },
   "author": "Noah by Pixmill",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/apppro123/vite-plugin-sync-folder-dev/issues"
+    "url": "https://github.com/apppro123/vite-plugin-shadow-on-dev/issues"
   },
-  "homepage": "https://github.com/apppro123/vite-plugin-sync-folder-dev",
+  "homepage": "https://github.com/apppro123/vite-plugin-shadow-on-dev",
   "devDependencies": {
     "@types/node": "^14.14.20",
     "esbuild": "^0.8.31",

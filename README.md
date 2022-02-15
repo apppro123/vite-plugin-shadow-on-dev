@@ -6,13 +6,28 @@ A vite plugin for shadowing folders and files (in folder) in dev mode to the spe
 
 ```
 // vite.config.js
-import shadowOnDev from 'vite-plugin-shadow-on-dev'
+import { defineConfig } from "vite";
+import syncFolderDev from "vite-plugin-sync-folder-dev";
 
-export default {
-    
-}
+export default defineConfig({
+    plugins: [
+        syncFolderDev({
+        src: "public",
+        dest: "../assets/public/",
+        }),
+    ],
+    root: "_assets",
+});
 
 ```
+
+## Options
+
+| | type | default | description
+| src | string | | relative path (to root) of source folder |
+| dest | string | | relative path (to root) of destination folder |
+| log | boolean | false | if page reloads should be logged |
+| root | string | ViteDevServer.root | relative path to projekt |
 
 ## Motivation
 
