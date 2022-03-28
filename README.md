@@ -3,6 +3,7 @@
 A vite plugin for shadowing folders and files (in folder) in dev mode to the specified output directory.
 
 ## Install
+
 `npm i vite-plugin-shadow-on-dev` or `yarn add vite-plugin-shadow-on-dev`
 
 ## Example
@@ -10,13 +11,14 @@ A vite plugin for shadowing folders and files (in folder) in dev mode to the spe
 ```
 // vite.config.js
 import { defineConfig } from "vite";
-import syncFolderDev from "vite-plugin-sync-folder-dev";
+import shadowFolderOnDev from "vite-plugin-shadow-on-dev";
 
 export default defineConfig({
     plugins: [
-        syncFolderDev({
-        src: "public",
-        dest: "../assets/public/",
+        shadowFolderOnDev({
+            src: "public",
+            dest: "../assets/app/",
+            log: true,
         }),
     ],
     root: "_assets",
